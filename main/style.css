@@ -1,0 +1,100 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1c1c1c;
+    margin: 0;
+}
+.calculator{
+    color: hsl(202, 11%, 29%);
+    max-inline-size: 22rem;
+    /* border: 1px solid #fff; */
+    border-radius: 5px;
+    overflow: hidden;
+    width: 300px;
+    /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.15),  0px 3px 6px 0px rgba(0, 0, 0, 0.12); */
+    /* width: 300px;/* Fixed width */
+    /* height: 400px; Fixed height */
+    border: 1px solid #ccc; /* Optional: Add a border for better visibility */
+    padding: 10px; /* Optional: Add some padding */
+    border-radius: 8px; /* Optional: Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
+    display: flex; /* Use flexbox for internal layout */
+    flex-direction: column; /* Stack children vertically */
+    justify-content: space-between; /* Space between elements */
+    border: 1px double white;
+}
+
+.cal_screen{
+    height: 50px;
+    font-size: 2rem;
+    text-align: right;
+    background: hsl(207, 19%, 61%); /* background color */
+	color: white; /* text color */
+	padding-top: 2rem; /* Logical Property for padding-top */
+	padding-bottom: 1.25rem; /* Logical Property for padding-bottom */
+	padding-right: 0.75rem; /* Logical Property for padding-right */
+	padding-left: 0.75rem; /* Logical Property for padding-left */
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    overflow-wrap: break-word; /* Allow words to break to the next line */
+    overflow: hidden; /* Hide overflow content that exceeds the height */
+    white-space: normal; /* Allow text to wrap */
+    display: block; /* Ensure it's block-level for wrapping */
+    border-radius: 5px;
+    border: none;
+}
+.cal_keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background: hsl(207, 19%, 61%); /* background color */
+    border-radius: 5px;
+    border: none;
+    
+}
+.cal_key{
+    background: hsl(206, 14%, 41%);
+    border: none;
+	padding-top: 0.5rem; /* Logical Property for padding-top */
+	padding-bottom: 0.5rem; /* Logical Property for padding-bottom */
+	padding-left: 1.25rem; /* Logical Property for padding-left */
+	padding-right: 1.25rem; /* Logical Property for padding-right */
+    font-size: 1.5rem;
+    inline-size: 60px;
+    block-size: 60px;
+    border-radius: 40px;
+    margin: 0.25rem;
+    color: hsl(255, 100%, 100%);
+}
+.key_enter{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 5;
+    background: hsl(357, 100%, 72%);
+    height: auto;
+    font-size: 3rem;
+}
+.key_clear{
+    background: hsl(357, 100%, 72%);
+}
+.key_operator{
+    background: #FF9500;
+}
+.cal_key:active, .cal_key:focus{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    outline: none;
+}
+@media(max-width: 600px){
+    .calculator{
+        width: 100%;
+        padding: 10px;
+    }
+    button{
+        font-size: 16px;
+    }
+}

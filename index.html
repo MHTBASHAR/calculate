@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main/style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="cal_screen" id="display">0</div>
+        <div class="cal_keys">
+            <button class="cal_key key_operator" onclick="appendToDisplay('+')">+</button>
+            <button class="cal_key key_operator" onclick="appendToDisplay('-')">-</button>
+            <button class="cal_key key_operator" onclick="appendToDisplay('*')">&times;</button>
+            <button class="cal_key key_operator" onclick="appendToDisplay('÷')">÷</button>
+            <button class="cal_key " onclick="appendToDisplay('7')">7</button>
+            <button class="cal_key" onclick="appendToDisplay('8')">8</button>
+            <button class="cal_key" onclick="appendToDisplay('9')">9</button>
+            <button class="cal_key" onclick="appendToDisplay('4')">4</button>
+            <button class="cal_key" onclick="appendToDisplay('5')">5</button>
+            <button class="cal_key" onclick="appendToDisplay('6')">6</button>
+            <button class="cal_key" onclick="appendToDisplay('1')">1</button>
+            <button class="cal_key" onclick="appendToDisplay('2')">2</button>
+            <button class="cal_key" onclick="appendToDisplay('3')">3</button>
+            <button class="cal_key" onclick="appendToDisplay('0')">0</button>
+            <button class="cal_key" onclick="appendToDisplay(')')">)</button>
+            <button class="cal_key key_operator" onclick="appendToDisplay('.')">.</button>
+            <button class="cal_key" onclick="appendToDisplay('Math.sin(')">sin</button>
+            <button class="cal_key" onclick="appendToDisplay('Math.cos(')">cos</button>
+            <button class="cal_key key_clear" onclick="clearDisplay()">AC</button>
+            <button class="cal_key key_enter" onclick="calculate('')">=</button>
+        </div>
+    </div>
+
+    <!-- Javascript externs links -->
+     <script src="main/index.js"></script>
+</body>
+</html>
